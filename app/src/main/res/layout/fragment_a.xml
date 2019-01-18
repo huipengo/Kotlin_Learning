@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:orientation="vertical"
+                                             >
+>
+
+    <Button
+            android:id="@+id/btn_change_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_orange"
+            android:textColor="@color/colorWhite"
+            android:text="Change Fragment"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+    />
+
+    <Button
+            android:id="@+id/btn_message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_orange"
+            android:textColor="@color/colorWhite"
+            android:text="给 Activity 传递消息"
+            android:textAllCaps="false"
+    />
+
+    <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_orange"
+            android:textColor="@color/colorWhite"
+            android:text="更换 TextView 的文字内容"
+            android:textAllCaps="false"
+    />
+
+    <TextView
+            android:id="@+id/wb_fragment_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:text="A_Fragment"
+            android:gravity="center"
+    />
+
+</LinearLayout>
