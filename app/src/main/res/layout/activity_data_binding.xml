@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.weibo.biz.kotlin.databind.User"/>
+        <variable name="users"
+                  type="java.util.List&lt;User&gt;"/>
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            tools:context=".databind.DataBindingActivity">
+
+        <include layout="@layout/layout_user"
+                 app:user="@{ users[0] }"
+        />
+        <include layout="@layout/layout_user"
+                 app:user="@{ users[1] }"
+        />
+
+    </LinearLayout>
+</layout>
